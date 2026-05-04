@@ -1,0 +1,15 @@
+
+let drone = s("sine").note("C2").sustain(4).room(3).gain(0.6);
+let heartbeat = s("sine").note("C2").attack(0.01).release(0.1).struct("1 ~ ~ 1 ~ ~ ~ ~").gain(1.2).room(0.2);
+
+let death = stack(drone, heartbeat);
+
+
+
+stack(
+
+ 
+   death
+  
+
+).cpm(80)
